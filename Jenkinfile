@@ -1,5 +1,5 @@
-pipeline {
-stage('tests') {
+pipeline {    
+stage('Build') {
     steps {
       echo "Running tests in a fully containerized environment..."
       dir ('docker-jenkins/test-scripts') {
