@@ -1,5 +1,5 @@
 pipeline {    
-stage('Build') {
+stages('Build') {
     steps {
       echo "Running tests in a fully containerized environment..."
       dir ('test-scripts') {
