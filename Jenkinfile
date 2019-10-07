@@ -1,4 +1,8 @@
 pipeline {
+    environment {
+    registry = "kjnutty/jenkins"
+    registryCredential = ‘dockerhub’
+                }
     agent { label 'master' }
     stages {
         stage('build') {
