@@ -5,8 +5,8 @@ pipeline {
         steps {
           echo "Running tests in a fully containerized environment..."
           sh "./test.sh"
-          sudo docker logs -f elasticsearch
-          sudo docker logs -f kibana
+          docker logs -f elasticsearch
+          docker logs -f kibana
       }
     }
   }
