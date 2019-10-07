@@ -4,8 +4,8 @@ stages {
       steps {
         echo "Running tests in a fully containerized environment..."
         sh "./test.sh"
-        docker logs -f elasticsearch
-        docker logs -f kibana
+        sudo docker logs -f elasticsearch
+        sudo docker logs -f kibana
       }
     }
   }
