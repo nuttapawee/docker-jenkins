@@ -1,4 +1,5 @@
 pipeline {
+agent { label 'wls03' }
 stages {      
   stage ('Build') {
       steps {
