@@ -1,5 +1,5 @@
 pipeline {
-agent { label 'wls03' }
+agent { label 'master' }
 stages {      
   stage ('Build') {
       steps {
